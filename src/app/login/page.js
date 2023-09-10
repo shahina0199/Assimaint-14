@@ -69,6 +69,7 @@ else{
                     <input className="form-control" value={formValue.password} onChange={(e)=>inputChange('password',e.target.value)} type="password" placeholder="XXXXXXX"/>
                     <input className="btn btn-primary mt-3" type="submit" value="Login" />
                 </form>
+                <button onClick={()=>signIn('github')} className="btn my-2 w-100 btn-dark">Login With Github</button>
             </div>
         </div>
     </div>
