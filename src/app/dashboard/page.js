@@ -7,11 +7,14 @@ async function GetData() {
 }
 
 import React from 'react';
+import AppNavBar from "@/app/component/AppNavBar";
+
 
 const page = async() => {
     const x = await GetData()
     return (
         <div>
+            <AppNavBar/>
             {x}
             
         </div>
